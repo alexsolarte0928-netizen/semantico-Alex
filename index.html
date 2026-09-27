@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Ejemplo Semántica y Accesible</title>
-    <!-- Ruta corregida para la subcarpeta css -->
+    <title>Parcial Práctico 1 - G611</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado Principal (Semántico y Accesible) -->
+    <!-- Encabezado Principal -->
     <header class="main-header">
         <div class="header-container">
-            <span class="logo" aria-label="Logotipo MyLogo">MyLogo</span>
-            <nav aria-label="Navegación principal">
+            <span class="logo">MyLogo</span>
+            <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -25,57 +24,49 @@
 
     <!-- Contenido Principal -->
     <main class="main-content">
-
-        <!-- Sección de Artículos -->
-        <section class="articles-section" aria-label="Artículos recientes">
+        
+        <!-- Sección de Artículos en dos columnas -->
+        <section class="articles-section">
             <article class="card">
-                <!-- Imagen real aleatoria desde internet -->
-                <img src="https://picsum.photos" alt="Fotografía aleatoria de prueba" width="200" height="200">
+                <div class="img-placeholder">80 × 80</div>
                 <h2>Article Title</h2>
                 <p>Article content goes here. This is a sample article content.</p>
             </article>
 
             <article class="card">
-                <!-- Recuadro gris técnico para diseño -->
-                <img src="https://placeholder.com" alt="Marcador de posición gris de 200 por 200 píxeles" width="200" height="200">
+                <div class="img-placeholder">80 × 80</div>
                 <h2>Article Title</h2>
                 <p>Article content goes here. This is a sample article content.</p>
             </article>
         </section>
 
-        <!-- Sección del Formulario -->
+        <!-- Formulario de Contacto -->
         <section class="form-section">
             <h2>Contact Form</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required autocomplete="name">
-                </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
-                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
 
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
 
-                <button type="submit" class="btn-submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
 
-        <!-- Sección de la Tabla -->
+        <!-- Tabla de Estudiantes -->
         <section class="table-section">
             <h2>Student Scores</h2>
             <table>
                 <thead>
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">HTML</th>
-                        <th scope="col">CSS</th>
-                        <th scope="col">Total</th>
+                        <th>Name</th>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,7 +85,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th scope="row" colspan="3">Total</th>
+                        <td colspan="3" style="text-align: right; font-weight: bold;">Total</td>
                         <td>350</td>
                     </tr>
                 </tfoot>
@@ -102,6 +93,11 @@
         </section>
 
     </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contact us at: info@example.com</p>
+    </footer>
 
 </body>
 </html>
