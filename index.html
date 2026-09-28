@@ -11,59 +11,68 @@
     <!-- Encabezado Principal -->
     <header class="main-header">
         <div class="header-container">
-            <span class="logo">MyLogo</span>
+            <span class="logo">🚀 MiPortafolio</span>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#articles">Artículos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Banner Principal Destacado -->
+    <section class="hero-banner" id="home">
+        <div class="hero-content">
+            <h1>Bienvenido a mi Parcial Práctico</h1>
+            <p>Diseño web moderno, adaptable y desarrollado con HTML5 y CSS3.</p>
+            <a href="#contact" class="btn-hero">Contáctanos</a>
+        </div>
+    </section>
+
     <!-- Contenido Principal -->
     <main class="main-content">
         
-        <!-- Sección de Artículos en dos columnas -->
-        <section class="articles-section">
+        <!-- Sección de Artículos en dos columnas con imágenes reales -->
+        <section class="articles-section" id="articles">
             <article class="card">
-                <div class="img-placeholder">80 × 80</div>
-                <h2>Article Title</h2>
-                <p>Article content goes here. This is a sample article content.</p>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Tecnología" class="card-img">
+                <h2>Desarrollo Web Moderno</h2>
+                <p>Explora cómo las nuevas tecnologías y el diseño responsivo cambian la forma en que interactuamos en la web.</p>
             </article>
 
             <article class="card">
-                <div class="img-placeholder">80 × 80</div>
-                <h2>Article Title</h2>
-                <p>Article content goes here. This is a sample article content.</p>
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Código" class="card-img">
+                <h2>Buenas Prácticas en CSS</h2>
+                <p>Aprende a estructurar estilos limpios, reutilizables y con una paleta de colores atractiva para cualquier proyecto.</p>
             </article>
         </section>
 
-        <!-- Formulario de Contacto -->
-        <section class="form-section">
-            <h2>Contact Form</h2>
+        <!-- Formulario de Contacto estilizado -->
+        <section class="form-section" id="contact">
+            <h2>Formulario de Contacto</h2>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre...">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
 
         <!-- Tabla de Estudiantes -->
         <section class="table-section">
-            <h2>Student Scores</h2>
+            <h2>Registro de Notas - Estudiantes</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Nombre</th>
                         <th>HTML</th>
                         <th>CSS</th>
                         <th>Total</th>
@@ -85,7 +94,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3" style="text-align: right; font-weight: bold;">Total</td>
+                        <td colspan="3" style="text-align: right; font-weight: bold;">Promedio General:</td>
                         <td>350</td>
                     </tr>
                 </tfoot>
@@ -96,7 +105,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>Contact us at: info@example.com</p>
+        <p>&copy; 2026 - Parcial Práctico 1 | Contacto: info@example.com</p>
     </footer>
 
 </body>
